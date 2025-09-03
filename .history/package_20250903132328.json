@@ -1,0 +1,30 @@
+{
+  "name": "morphlink",
+  "version": "1.0.0",
+  "description": "Smart URL Shortener with autopilot microservice scaling",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js",
+    "microservice": "node redirector.microservice.js",
+    "autopilot": "node autopilot.js",
+    "frontend": "cd frontend && npm run dev"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "nanoid": "^3.3.7",
+    "axios": "^1.6.2",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "keywords": [
+    "url-shortener",
+    "microservices",
+    "autopilot",
+    "load-balancing"
+  ],
+  "author": "Morphlink Team",
+  "license": "MIT"
+}
